@@ -11,3 +11,12 @@ new_words = main()
 
 new_words_split = new_words.split()
 print(f"Found {len(new_words_split)} total words.")
+
+def counting_characters(c):
+    count_character = {}
+    for character in c:
+        if character.lower() in count_character:
+            count_character[character.lower()] += 1
+        else:
+            count_character[character.lower()] = 1
+    return count_character
