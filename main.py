@@ -1,1 +1,1 @@
-from stats import new_words_spli
+from stats import new_words_split
