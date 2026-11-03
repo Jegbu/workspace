@@ -26,5 +26,8 @@ def sort_on(count_character: tuple[str, int]) -> int:
     
 def chars_dict_to_sorted_list(count_character: dict[str, int]) -> list[tuple[str, int]]:
     chars_sorted = []
+    for counting_character in count_character:
+        for character, count in count_character.items():
+            chars_sorted.append((character, count))
     return sorted(count_character.items(), key=sort_on, reverse=True)
     
