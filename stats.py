@@ -20,3 +20,6 @@ def counting_characters(c):
         else:
             count_character[character.lower()] = 1
     return count_character
+
+def sort_on(count_character: tuple[str, int]) -> int:
+    return count_character[1]
