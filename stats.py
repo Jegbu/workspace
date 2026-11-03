@@ -23,3 +23,8 @@ def counting_characters(c):
 
 def sort_on(count_character: tuple[str, int]) -> int:
     return count_character[1]
+    
+def chars_dict_to_sorted_list(count_character: dict[str, int]) -> list[tuple[str, int]]:
+    chars_sorted = []
+    return sorted(count_character.items(), key=sort_on, reverse=True)
+    
