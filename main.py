@@ -7,8 +7,8 @@ from stats import chars_dict_to_sorted_list
 sorted_characters = chars_dict_to_sorted_list(characters)
 print(sorted_characters)
 def print_report(book_name: str, total_words: int, sorted_characters: list[tuple[str, int]]) -> None:
-    print(f"Book name: {book_name}")
-    print(f"Total words: {total_words}")
+    print(f"Analyzing book found at /{book_name}")
+    print(f"Found {total_words} total words")
     print("Character counts:")
     for character, count in sorted_characters:
         print(f"{character}: {count}")
