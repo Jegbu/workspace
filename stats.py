@@ -3,7 +3,7 @@ def get_book_text(b):
         content = f.read()
     return content
 
-
+import sys
 if (len(sys.argv)) < 2:
     print("Usage: python3 main.py workspace/books")
     sys.exit(1)
