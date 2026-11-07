@@ -5,7 +5,7 @@ def get_book_text(b):
 
 import sys
 if (len(sys.argv)) < 2:
-    print("Usage: python3 main.py workspace/books")
+    print("Usage: python3 main.py <path_to_book>")
     sys.exit(1)
 else:
     book_name = sys.argv[1]
