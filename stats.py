@@ -5,7 +5,7 @@ def get_book_text(b):
 
 
 def main():
-    book_obtained = get_book_text("books/frankenstein.txt")
+    book_obtained = 
     return(book_obtained)   
 new_words = main()
 
