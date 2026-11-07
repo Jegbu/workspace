@@ -15,4 +15,4 @@ def print_report(book_name: str, total_words: int, sorted_characters: list[tuple
         if character.isalpha():
             print(f"{character}: {count}")
     print("============= END ===============")        
-print_report("books/frankenstein.txt", len(new_words_split), sorted_characters)
+print_report("sys.argv[1]", len(new_words_split), sorted_characters)
