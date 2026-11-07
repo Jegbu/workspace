@@ -7,7 +7,10 @@ def get_book_text(b):
 if (len(sys.argv)) < 2:
     print("Usage: python3 main.py workspace/books")
     sys.exit(1)
-new_words = main()
+else:
+    book_name = sys.argv[1]
+    new_words = get_book_text(book_name)    
+
 
 new_words_split = new_words.split()
 print(f"Found {len(new_words_split)} total words.")

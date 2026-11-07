@@ -1,10 +1,10 @@
+import sys
 from stats import new_words
 from stats import counting_characters
 from stats import new_words_split
 characters =  counting_characters(new_words)
 from stats import chars_dict_to_sorted_list
 sorted_characters = chars_dict_to_sorted_list(characters)
-import sys
 def print_report(book_name: str, total_words: int, sorted_characters: list[tuple[str, int]]) -> None:
     print("============ BOOKBOT ============")
     print(f"Analyzing book found at {book_name}...")
