@@ -4,9 +4,9 @@ def get_book_text(b):
     return content
 
 
-def main():
-    book_obtained = 
-    return(book_obtained)   
+if (len(sys.argv)) < 2:
+    print("Usage: python3 main.py workspace/books")
+    sys.exit(1)
 new_words = main()
 
 new_words_split = new_words.split()
